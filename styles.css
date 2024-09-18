@@ -1,0 +1,146 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+    --botao-azul-efeito: #3c92fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.conteudo {
+    background-image: url(/img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.conteudo-botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    color: var(--branco-principal);
+    text-decoration: none;
+    padding: 16px;
+    display: block;
+    margin-bottom: 1em;
+    font-weight: 500;
+}
+
+.secundario-botao {
+    background-color: transparent;
+    border: var(--branco-principal) solid 2px;
+}
+
+.conteudo-botao:hover {
+    background-color: var(--botao-azul-efeito);
+
+}
+
+.secundario-botao:hover {
+    color: var(--cor-de-fundo);
+}
+
+.conteudo-titulo {
+    font-size: 28px;
+    margin-bottom: 1em;
+}
+
+.foto-conteudo {
+    width: 50%;
+    margin-bottom: 1em;
+}
+
+.conteudo-div {
+    margin: 0 6em;
+}
+
+.secundario {
+    color: var(--branco-principal);
+    align-items: center;
+    text-align: justify;
+    justify-items: center;
+}
+
+.conteudo-titulo-secundario {
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 0.3em;
+}
+
+.foto-secundario {
+    margin-left: 15%;
+}
+
+.terceiro_botao {
+    width: 200px;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.dispositivos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-dispositivos {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.conteudo-dispostivos {
+    display: inline-flex;
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 15em;
+}
+
+.rodape {
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+.rodape__lista {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 2em 5em;
+    
+}
+
+.lista__link a {
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 1em;
+
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul-efeito);
+}
+
+.rodape__texto {
+    margin: 0 5em;
+}
